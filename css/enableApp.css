@@ -1,0 +1,131 @@
+ /* Eustatiu.Iagaru@gmail.com */
+
+ #AddonPrivacyShade {
+     position: fixed;
+     z-index: 900000;
+     top: 30%;
+     left: 40%;
+     width: 300px;
+     height: 100px;
+     box-shadow: 0 0 0 999999px rgba(0, 0, 0, .9);
+     border-width: 3px;
+     border-style: solid;
+     border-color: black;
+     border-radius: 5px;
+     min-width: 150px;
+     min-height: 50px;
+     pointer-events: none;
+ }
+
+ #AddonPrivacyShade::before {
+     content: " ";
+     position: absolute;
+     z-index: -1;
+     top: -4px;
+     left: -4px;
+     right: -4px;
+     bottom: -4px;
+     border: 2px solid white;
+     border-radius: 5px;
+     font-family: initial;
+     font-weight: 400;
+     line-height: 1;
+ }
+
+ #headerShade {
+     width: 30px;
+     height: 15px;
+     border-bottom-left-radius: 100px;
+     border-bottom-right-radius: 100px;
+     background: white;
+     bottom: -17px;
+     left: 45%;
+     position: absolute;
+     cursor: move;
+     pointer-events: all;
+     border: 0!important;
+     border-width: 0px!important;
+     text-align: left;
+     vertical-align: unset;
+ }
+
+ #resizerShade {
+     width: 10px;
+     height: 15px;
+     position: absolute;
+     right: 0;
+     bottom: 0;
+     cursor: nwse-resize;
+     pointer-events: all;
+     border-top-left-radius: 100px;
+     box-sizing: border-box;
+     pointer-events: all;
+     border-width: 10px 10px 0px;
+     border-style: solid solid solid;
+     border-color: black;
+     border-image: initial;
+     background: black;
+     font-family: initial;
+     font-weight: 400;
+     line-height: 1;
+ }
+
+ #moveSignShade {
+     position: relative;
+     margin: 0;
+     font-size: 24px;
+     left: 3px;
+     top: -10px;
+     color: white;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+     margin: 0!important;
+     padding: 0!important;
+     font-family: initial;
+     font-weight: 400;
+     line-height: 1;
+ }
+
+
+ #resizeDesc {
+     color: white;
+     position: absolute;
+     left: -1px;
+     top: -8px;
+     -webkit-transform: rotate(-45deg);
+     font-size: 12px;
+     transform: rotate(-45deg);
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+     margin: 0!important;
+     padding: 0!important;
+     font-family: initial;
+     font-weight: 400;
+     line-height: 1;
+ }
+
+ .upDown {
+     font-size: 14px;
+     color: black;
+     position: relative;
+     left: 4.5px;
+     top: 2px;
+     font-family: initial;
+     font-weight: 400;
+     line-height: 1;
+ }
+
+ .leftRight {
+     font-size: 14px;
+     color: black;
+     position: relative;
+     left: -6px;
+     top: 1px;
+     font-family: initial;
+     font-weight: 400;
+     line-height: 1;
+ }
